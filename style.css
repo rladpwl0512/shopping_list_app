@@ -1,0 +1,114 @@
+/*button 크기 고려(웹접근성)*/
+/*그라데이션 사이트*/
+/*border-radius: 20px 20px 0 0과 같이*/
+/* li 많아지면 스크롤 되게 하기 */
+/* icon 바꿔보기 */
+/*shadow 사이트*/
+@charset "UTF-8";
+
+body {
+  background-color: #ced3df;
+}
+
+button {
+  appearance: none;
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 0 auto;
+  -webkit-box-shadow: 8px 4px 17px 0px rgba(0,0,0,0.41); 
+  box-shadow: 8px 4px 17px 0px rgba(0,0,0,0.41);
+  border-radius: 20px 20px;
+}
+
+/* header */
+.header {
+  background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin:0;
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+/* section */
+.section {
+  background-color: #f1f1f7;
+  height: 580px;
+  overflow-y: auto; /*스크롤링*/
+}
+
+.items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.item_row {
+  position: relative;
+  padding: 20px;
+  border-bottom: 1px solid #cfd3de;
+}
+
+.item_name {
+  font-size: 20px;
+}
+
+.item { 
+  display: flex; 
+  justify-content: space-between; /*안에 있는 요소 중간을 띄움*/
+}
+
+.item_delete {
+  font-size: 20px;
+  transition: all 300ms ease-in; /*마우스 올리면 커지게*/
+}
+
+.item_delete:hover {
+  color: red;
+  transform: scale(1.1); /*마우스 올리면 커지게*/
+}
+
+/* footer */
+.footer_input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+}
+
+.footer_btn_wrap {
+  position: relative;
+  background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 50px;
+  padding-top: 10px;
+  border-radius: 0 0 20px 20px;
+}
+
+.footer_btn {
+  display: block;
+  margin: 0 auto;
+  background: url(./img/plus_w.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  transition: all 300ms ease-in; /*마우스 올리면 커지게*/
+}
+
+.footer_btn:hover {
+  transform: scale(1.1); /*마우스 올리면 커지게*/
+}
+
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}

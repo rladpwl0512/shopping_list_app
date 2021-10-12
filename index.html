@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="main.js" defer></script> <!--defer으로 js 연결-->
+  <link rel="stylesheet" href="main.css"> <!--css 연결-->
+  <title>🛍Shopping List</title>
+  <script src="https://kit.fontawesome.com/d1f0f5669b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">Shopping List</header>
+    <section class="section">
+      <ul class="items">
+        <!-- 
+        <li class="item_row">
+          <div class="item">
+            <span class="item_name">Egg</span>
+            <button class="item_delete" type="button">
+              <i class="fas fa-trash-alt"></i>
+              <span class="blind">삭제하기 버튼</span>
+            </button>
+          </div>
+        </li> 
+        -->
+      </ul>
+      
+    </section>
+    <footer class="footer">
+      <form class="new_form">
+        <input type="text" placeholder="to buy" class="footer_input">
+        <div class='footer_btn_wrap'>
+          <button type="submit" class="footer_btn"> <!--button 클릭했을 때, input의 모든 값들이 submit처리됨(form안에서 button은 기본적으로 submit default)-->
+            <span class="blind">추가하기 버튼</span>
+          </button>
+        </div>
+      </form>
+    </footer>
+  </div>  
+</body>
+</html>
